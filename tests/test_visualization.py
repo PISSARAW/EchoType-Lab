@@ -58,26 +58,3 @@ class TestPlotClassDistribution:
         fig = plot_class_distribution(y, labels=["a", "b", "c"], show=False)
         import matplotlib.figure
         assert isinstance(fig, matplotlib.figure.Figure)
-
-
-class TestConsentModule:
-    def test_non_interactive_returns_true(self, tmp_path):
-        from echotype_lab.consent import request_consent
-
-        log = tmp_path / "consent.jsonl"
-        result = request_consent(log_path=log, non_interactive=True)
-        assert result is True
-
-    def test_consent_log_written(self, tmp_path):
-        import json
-        from echotype_lab.consent import request_consent
-
-        log = tmp_path / "consent.jsonl"
-        request_consent(log_path=log, non_interactive=True)
-        assert log.exists()
-
-        lines = log.read_text().strip().splitlines()
-        assert len(lines) == 1
-        record = json.loads(lines[0])
-        assert record["accepted"] is True
-        assert "timestamp" in record

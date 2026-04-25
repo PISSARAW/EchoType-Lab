@@ -14,7 +14,7 @@ Usage example
 >>> from echotype_lab.features.mfcc import extract_mfcc, extract_mfcc_batch
 >>> feats = extract_mfcc("data/raw/a/a_0001.wav")
 >>> feats.shape
-(130,)   # n_mfcc=13, statistics: mean+std+delta_mean+delta_std+delta2_mean+delta2_std → 13*10
+(78,)   # n_mfcc=13, statistics: mean+std+delta_mean+delta_std+delta2_mean+delta2_std → 13*6
 """
 
 from __future__ import annotations
