@@ -8,6 +8,25 @@
 
 ---
 
+## 👤 Personal project notice
+
+> **EchoType Lab is a personal project.**  Although the repository is public
+> for transparency and reference, it is **not intended for general use** and is
+> not designed as a turnkey product or a community-supported tool.
+>
+> - No support, issue triage, or feature requests are guaranteed.
+> - No backwards-compatibility commitments are made; APIs, scripts, and the
+>   directory layout may change at any time without notice.
+> - Pull requests may be ignored or closed without review.
+> - The code is shared **as-is**, primarily as a learning artefact for the
+>   author and as an illustrative reference for anyone interested in the
+>   underlying techniques.
+>
+> If you are looking for a production-ready, maintained library for acoustic
+> side-channel research, this is **not** it.  Use it at your own discretion.
+
+---
+
 ## ⚠️ Ethical Considerations & Disclaimer
 
 > **Read this section carefully before using or modifying EchoType Lab.**
